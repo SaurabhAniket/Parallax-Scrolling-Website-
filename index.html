@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE SAURABH SHOW </title>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href = "#" class ="logo">SAURABH</a>
+            
+            <ul>
+                <li><a href="https://www.youtube.com/c/TheSaurabhShow/featured" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a href="https://youtube.com/playlist?list=PL38J2rA1tP9lJ-VlqsN3g25-zI5vjPQmG" target="_blank" rel="noopener noreferrer">Man Ki Baat</a></li>
+                <li><a href="https://www.youtube.com/c/TheSaurabhShow/membership" target="_blank" rel="noopener noreferrer">Membership</a></li>
+                <li><a href="https://www.linkedin.com/in/saurabh-aniket-319176206/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src ="stars.png" id="stars">
+            <img src ="moon.png" id="moon">
+            <img src ="mountains_behind.png" id="mountains_behind">
+            <h2 id ="text">THE   SAURABH   SHOW</h2>
+            <a href="https://www.youtube.com/c/TheSaurabhShow/featured target="_blank" rel="noopener noreferrer"" id="btn">Subscribe</a>
+            <img src ="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id ="sec">
+            <h2>Hi ! I'm Saurabh </h2>
+            <p>B.Tech 2nd Year Student at KIIT UNIVERSITY,
+                Ha bhai Engineering kar raha hu par abhi tak pata nahi chala ki kyu kar raha hu.<br>
+                Aage Sab Bhagwan ke Upar..<br>I enjoy reading books and solving problems using Computer Science.<br>
+                <h3> <br>   EDUCATION  ||   GAMING    ||  VLOGS </h3>
+                <div class="row">
+                    <div class ="playlist-col">
+                        <h3>Video</h3>
+                        <p>192</p>
+                    </div>
+                    <div class ="playlist-col">
+                        <h3>Subscriber</h3>
+                        <p>1.87K</p>
+                    </div>
+                    <div class ="playlist-col">
+                        <h3>Views</h3>
+                        <p>1.4Lakhs</p>
+                    </div>
+                </div>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front= document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll' , function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top =value *0.5 + 'px';
+            })
+
+        </script>
+    </body>
+</html>
